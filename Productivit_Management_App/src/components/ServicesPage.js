@@ -38,7 +38,33 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        
+        <div className="service-item">
+          <div className="service-icon">🔔</div>
+          <div className="service-details">
+            <h2>Reminders & Notifications</h2>
+            <p>Stay on top of your tasks with our reminder system:</p>
+            <ul>
+              <li>Set custom reminders with specific dates and times</li>
+              <li>Receive browser notifications when reminders are due</li>
+              <li>Never miss an important deadline again</li>
+              <li>Manage and delete reminders as needed</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="service-item">
+          <div className="service-icon">📊</div>
+          <div className="service-details">
+            <h2>Productivity Analytics</h2>
+            <p>Track your productivity with visual statistics:</p>
+            <ul>
+              <li>View total tasks, completed tasks, and pending tasks</li>
+              <li>Monitor your overall completion progress with a visual progress bar</li>
+              <li>Track productivity trends over time (coming soon)</li>
+              <li>Identify productivity patterns to optimize your workflow</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   );
