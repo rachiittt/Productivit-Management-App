@@ -1,3 +1,9 @@
-import React from "react";
-import {Na}\
-fiejmfow
+import React from 'react'
+
+const Navigation = () => {
+  return (
+    <div>Navigation</div>
+  )
+}
+
+export default Navigation
