@@ -1,8 +1,8 @@
 
 import React from 'react';
-// import twitterIcon from './images/twitter.png';
-// import linkedinIcon from './images/linkedin.png';
-// import githubIcon from './images/github.png';
+import twitterIcon from './images/twitter.png';
+import linkedinIcon from './images/linkedin-logo.png';
+import githubIcon from './images/github.png';
 
 
 const Footer = () => {
@@ -34,35 +34,29 @@ const Footer = () => {
               <li><a href="/">FAQ</a></li>
           </ul>
           </div>
-          <div className="footer-column">
-              <h3 className="footer-heading">Connect With Us</h3>
+        </div>
 
-              <div className='socialmedia-container'>
-                <div className='socialmedia-icons'>
-                  <a href="https://github.com/rachiittt" className='social-links'>
-                    <img src="blank for now" alt="Git Hub" className='social-img'/>
-                  </a>
-                </div>
-              </div>
-
-              <div className='socialmedia-container'>
-                <div className='socialmedia-icons'>
-                  <a href="https://www.linkedin.com/in/rachit-singh-417221329/" className='social-links'>
-                    <img src="blank for now" alt="linkedin" className='social-img'/>
-                  </a>
-                </div>
-              </div>
-
-              <div className='socialmedia-container'>
-                <div className='socialmedia-icons'>
-                  <a href="https://x.com/home?lang=en" className='social-links'>
-                    <img src="blank for now" alt="Twitter" className='social-img'/>
-                  </a>
-                </div>
-              </div>
+        <div className="footer-column">
+          <h3 className="footer-header">Connect With Us</h3>
+          
+          <div className='socialmedia-container'>
+            <div className='socialmedia-icons'>
+              <a href="https://github.com/rachiittt" className='social-links'>
+                <img src={githubIcon} alt="Git Hub" className='social-img'/>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/rachit-singh-417221329/" className='social-links'>
+                <img src={linkedinIcon} alt="linkedin" className='social-img'/>
+              </a>
+              
+              <a href="https://x.com/home?lang=en" className='social-links'>
+                <img src={twitterIcon} alt="Twitter" className='social-img'/>
+              </a>
             </div>
           </div>
-          <div className="footer-bottom">
+        </div>
+
+        <div className="footer-bottom">
           <p>&copy; {currentYear} Productivity Pro. All rights reserved.</p>
         </div>
       </div>
