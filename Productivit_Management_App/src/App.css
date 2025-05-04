@@ -1,3 +1,6 @@
+/* 
+NOTE:- i wull be chnaging the css this is just a basic stylig will make it very good after the mid term evaluation .....
+ */
 nav ul {
     list-style: none;
     display: flex;
@@ -19,4 +22,93 @@ nav ul {
     text-decoration: none;
     color: black;
   }
-  
+  /* Base Footer Styles */
+.footer {
+  background-color: #f0f0f0;
+}
+
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* will use this in my main css also  */
+.footer-Layout { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Columns */
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-header,
+.footer-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Links */
+.Web-Links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Web-Links li {
+  margin-bottom: 8px;
+}
+
+.Web-Links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.Web-Links a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media */
+.socialmedia-container {
+  margin-top: 10px;
+}
+
+.socialmedia-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.social-links:hover {
+  transform: scale(1.1);
+}
+
+.social-img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* Bottom Text */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
