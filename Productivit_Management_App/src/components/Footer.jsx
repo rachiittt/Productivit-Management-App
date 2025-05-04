@@ -1,7 +1,73 @@
-import React from 'react'
 
-export default function Footer() {
+import React from 'react';
+// import twitterIcon from './images/twitter.png';
+// import linkedinIcon from './images/linkedin.png';
+// import githubIcon from './images/github.png';
+
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="footer">
+      <div className="footer-main">
+        <div className='footer-Layout'>
+          <div className='footer-column'>
+            <h3 className='footer-header'>Task Master</h3>
+            <p className="footer-text">Helping you achieve more with less stress.</p>
+          </div>
+
+          <div className='footer-column'>
+          <h3 className='footer-header'>Web Links</h3>
+          <ul className='Web-Links'>
+              <li><a href="/Your-Task">Your Task's</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/blog">Blog</a></li>
+          </ul>
+          </div>
+
+          <div className='footer-column'>
+          <h3 className='footer-header'>Need Help ?</h3>
+          <ul className='Web-Links'>
+              <li><a href="/">Help Center</a></li>
+              <li><a href="/">Contact Us</a></li>
+              <li><a href="/">FAQ</a></li>
+          </ul>
+          </div>
+          <div className="footer-column">
+              <h3 className="footer-heading">Connect With Us</h3>
+
+              <div className='socialmedia-container'>
+                <div className='socialmedia-icons'>
+                  <a href="https://github.com/rachiittt" className='social-links'>
+                    <img src="blank for now" alt="Git Hub" className='social-img'/>
+                  </a>
+                </div>
+              </div>
+
+              <div className='socialmedia-container'>
+                <div className='socialmedia-icons'>
+                  <a href="https://www.linkedin.com/in/rachit-singh-417221329/" className='social-links'>
+                    <img src="blank for now" alt="linkedin" className='social-img'/>
+                  </a>
+                </div>
+              </div>
+
+              <div className='socialmedia-container'>
+                <div className='socialmedia-icons'>
+                  <a href="https://x.com/home?lang=en" className='social-links'>
+                    <img src="blank for now" alt="Twitter" className='social-img'/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="footer-bottom">
+          <p>&copy; {currentYear} Productivity Pro. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
