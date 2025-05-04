@@ -8,7 +8,7 @@ import BlogPage from './components/BlogPage.jsx';
 import LoginSignupPage from './components/LoginSignupPage.jsx';
 import Footer from './components/Footer.jsx'
 import TodaysTasks from './components/TodaysTasks';
-import './index.css';
+import './App.css';
 
 
 function App() {

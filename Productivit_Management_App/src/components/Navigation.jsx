@@ -14,7 +14,7 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/TodaysTasks" className={({ isActive }) => 
+          <NavLink to="/Your-Task" className={({ isActive }) => 
             isActive ? 'active' : ''
           }>
             Today's Tasks
@@ -42,7 +42,7 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/loginsignup" className={({ isActive }) => 
+          <NavLink to="/LoginSignupPage" className={({ isActive }) => 
             isActive ? 'active' : ''
           }>
             Login/Signup

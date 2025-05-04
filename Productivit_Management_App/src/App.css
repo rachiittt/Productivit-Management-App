@@ -1,0 +1,22 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a.active {
+    color: blue;
+    font-weight: bold;
+    text-decoration:overline
+  }
+
+  .logo.active{
+    text-decoration: none;
+    color: black;
+  }
+  
