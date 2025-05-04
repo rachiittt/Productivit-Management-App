@@ -40,14 +40,12 @@ nav ul {
   gap: 30px;
 }
 
-/* Columns */
 .footer-column {
   flex: 1 1 200px;
   min-width: 200px;
 }
 
-.footer-header,
-.footer-heading {
+.footer-header{
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -58,7 +56,6 @@ nav ul {
   color: #555;
 }
 
-/* Links */
 .Web-Links {
   list-style: none;
   padding: 0;
@@ -86,8 +83,9 @@ nav ul {
 
 .socialmedia-icons {
   display: flex;
+  gap: 20px;
+  margin-top: 15px;
   align-items: center;
-  gap: 10px;
 }
 
 .social-links {
@@ -96,19 +94,29 @@ nav ul {
 }
 
 .social-links:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .social-img {
-  width: 26px;
-  height: 26px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
-
-/* Bottom Text */
 .footer-bottom {
+  width: 100%; 
   margin-top: 30px;
+  padding-top: 15px;
   text-align: center;
   font-size: 13px;
   color: #777;
+  border-top: 1px solid #ddd;  
+}
+
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;  /* Make the main container a flex container */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Space evenly between items */
+  align-items: flex-start; /* Align items to the top */
 }
