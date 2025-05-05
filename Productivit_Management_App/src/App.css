@@ -120,3 +120,118 @@ nav ul {
   justify-content: space-between; /* Space evenly between items */
   align-items: flex-start; /* Align items to the top */
 }
+
+/* Container Setup */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Section and Titles */
+.about-section h1,
+.about-section h2,
+.about-section h3 {
+  color: #2c3e50;
+}
+
+.about-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-image img,
+.my-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.abouttext {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Features Overview */
+.features-overview {
+  margin-top: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item h3 {
+  margin-bottom: 10px;
+}
+
+/* Developer Section */
+.my-information {
+  margin-top: 60px;
+}
+
+.my-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.my-bio {
+  flex: 1;
+  min-width: 280px;
+}
+
+.my-bio h3 {
+  margin-bottom: 10px;
+}
+
+/* Placeholder image */
+.productivity-img {
+  background-color: #ddd;
+  width: 300px;
+  height: 200px;
+  display: block;
+  border-radius: 10px;
+}
+
+
