@@ -8,7 +8,6 @@ const AboutPage = () => {
         <div className="about-content">
           <div className="about-image">
           <img src="/images/productivity.png" alt="productivity" className="productivity-img" />
-
           </div>
 
           <div className="abouttext">
