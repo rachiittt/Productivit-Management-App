@@ -235,3 +235,79 @@ nav ul {
 }
 
 
+/* General container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Section Heading */
+.services-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.services-intro {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #555;
+}
+
+/* Service Item Layout */
+.service-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Service Icon */
+.service-icon {
+  font-size: 3rem;
+  color: #4a90e2;
+  min-width: 60px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 6px;
+}
+
+/* Service Details */
+.service-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.service-details p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.service-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.service-details ul li {
+  margin-bottom: 8px;
+}
