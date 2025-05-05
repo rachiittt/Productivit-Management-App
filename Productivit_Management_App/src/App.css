@@ -154,7 +154,6 @@ nav ul {
   margin-top: 25px;
 }
 
-/* About Content */
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -176,7 +175,6 @@ nav ul {
   min-width: 280px;
 }
 
-/* Features Overview */
 .features-overview {
   margin-top: 40px;
 }
@@ -225,7 +223,6 @@ nav ul {
   margin-bottom: 10px;
 }
 
-/* Placeholder image */
 .productivity-img {
   background-color: #ddd;
   width: 300px;
@@ -235,7 +232,6 @@ nav ul {
 }
 
 
-/* General container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -245,7 +241,6 @@ nav ul {
   color: #333;
 }
 
-/* Section Heading */
 .services-section h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
@@ -263,7 +258,6 @@ nav ul {
   color: #555;
 }
 
-/* Service Item Layout */
 .service-item {
   display: flex;
   flex-wrap: wrap;
@@ -280,7 +274,6 @@ nav ul {
   transform: translateY(-3px);
 }
 
-/* Service Icon */
 .service-icon {
   font-size: 3rem;
   color: #4a90e2;
@@ -290,7 +283,6 @@ nav ul {
   padding-top: 6px;
 }
 
-/* Service Details */
 .service-details h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;

@@ -7,7 +7,8 @@ const AboutPage = () => {
         <h1>About TaskMaster</h1>
         <div className="about-content">
           <div className="about-image">
-            <img src="not now" alt="productivity" className='productivity-img'/>
+          <img src="/images/productivity.png" alt="productivity" className="productivity-img" />
+
           </div>
 
           <div className="abouttext">
@@ -47,7 +48,7 @@ const AboutPage = () => {
           <h2>About the Developer</h2>
           <div className="my-content">
             <div className="my-image">
-              <img src="not now " alt="my images ;)" />
+              <img src="./images/rachit_linckdinphoto.jpg" alt="my images ;)" />
             </div>
             <div className="my-bio">
               <h3>Rachit Singh</h3>

@@ -1,8 +1,6 @@
 
 import React from 'react';
-import twitterIcon from './images/twitter.png';
-import linkedinIcon from './images/linkedin-logo.png';
-import githubIcon from './images/github.png';
+
 
 
 const Footer = () => {
@@ -42,15 +40,15 @@ const Footer = () => {
           <div className='socialmedia-container'>
             <div className='socialmedia-icons'>
               <a href="https://github.com/rachiittt" className='social-links'>
-                <img src={githubIcon} alt="Git Hub" className='social-img'/>
+                <img src="/images/github.png" alt="Git Hub" className='social-img'/>
               </a>
               
               <a href="https://www.linkedin.com/in/rachit-singh-417221329/" className='social-links'>
-                <img src={linkedinIcon} alt="linkedin" className='social-img'/>
+                <img src="/images/linkedin-logo.png" alt="linkedin" className='social-img'/>
               </a>
               
               <a href="https://x.com/home?lang=en" className='social-links'>
-                <img src={twitterIcon} alt="Twitter" className='social-img'/>
+                <img src="/images/twitter.png" alt="Twitter" className='social-img'/>
               </a>
             </div>
           </div>
