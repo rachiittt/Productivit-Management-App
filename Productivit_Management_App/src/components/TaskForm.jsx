@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 
-const TaskForm=({addTask})=>{
+const TaskForm=({onAddTask})=>{
   const [text, setText] = useState('');
   const [dueDate, setDueDate] = useState('');
   const [priority, setPriority] = useState('medium');
@@ -12,7 +12,7 @@ const TaskForm=({addTask})=>{
       return
     }
 
-    addTask({text,dueDate,priority})//This will give us all the given info
+    onAddTask({text,dueDate,priority})//This will give us all the given info
 
     // Reset form
     setText('');
