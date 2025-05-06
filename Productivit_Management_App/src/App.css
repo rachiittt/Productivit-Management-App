@@ -1,27 +1,60 @@
 /* 
 NOTE:- i wull be chnaging the css this is just a basic stylig will make it very good after the mid term evaluation .....
  */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  nav a.active {
-    color: blue;
-    font-weight: bold;
-    text-decoration:overline
-  }
+/* NAVIGATION BAR STYLING */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-  .logo.active{
-    text-decoration: none;
-    color: black;
-  }
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  color: #4a90e2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #4a90e2;
+}
+
+nav a.active {
+  color: #4a90e2;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
   /* Base Footer Styles */
 .footer {
   background-color: #f0f0f0;
@@ -373,4 +406,60 @@ nav ul {
 .post ol, .post ul {
   padding-left: 20px;
   margin-top: 10px;
+}
+
+
+.task-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.task-input,
+.date-input,
+.priority-select {
+  flex: 1 1 220px;
+  padding: 0.9rem 1.1rem;
+  font-size: 1.1rem;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-input:focus,
+.date-input:focus,
+.priority-select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.25);
+  outline: none;
+}
+
+/* Button Style */
+.task-btn {
+  flex: 1 1 180px;
+  padding: 0.9rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-btn:hover {
+  background-color: #3c7dc2;
 }
