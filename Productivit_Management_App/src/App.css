@@ -148,6 +148,66 @@ nav a.active {
   color: #333;
   background-color: #f9f9f9;
 }
+/* HomePage Styles */
+.container-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-top: 10px;
+}
+
+.motivation-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.motivation-box h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.motivation-box p {
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Additional Styling for Flexibility */
+.home-header p,
+.motivation-box p {
+  font-size: 1.2rem;
+}
+
+.home-header h1,
+.motivation-box h3 {
+  color: #2c3e50;
+}
 
 /* Section and Titles */
 .about-section h1,
