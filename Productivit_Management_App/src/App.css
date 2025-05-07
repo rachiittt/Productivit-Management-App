@@ -56,38 +56,23 @@ nav a.active {
 }
 
   /* Base Footer Styles */
-.footer {
-  background-color: #f0f0f0;
-}
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  .footer-Layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px; 
+    margin-bottom: 20px;
+  }
+  
 
-.footer-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* will use this in my main css also  */
-.footer-Layout { 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.footer-column {
-  flex: 1 1 200px;
-  min-width: 200px;
-}
-
-.footer-header{
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.footer-text {
-  font-size: 14px;
-  color: #555;
-}
 
 .Web-Links {
   list-style: none;
