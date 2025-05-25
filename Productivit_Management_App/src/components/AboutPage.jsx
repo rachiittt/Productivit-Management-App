@@ -46,7 +46,7 @@ const AboutPage = () => {
         <div className="my-information ">
           <h2>About the Developer</h2>
           <div className="my-content">
-            <div className="my-image">
+            <div className="about-image">
               <img src="./images/rachit_linckdinphoto.jpg" alt="my images ;)" />
             </div>
             <div className="my-bio">
