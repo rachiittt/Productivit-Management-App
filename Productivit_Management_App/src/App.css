@@ -688,3 +688,101 @@ nav a.active {
 .btn-clear:hover {
   background-color: #7f8c8d;
 }
+
+.reminders-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.reminder-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.reminder-input,
+.time-input {
+  flex: 1 1 200px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.set-reminder-btn {
+  background-color: #1f2937; /* matches dark navy Add Task button */
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.set-reminder-btn:hover {
+  background-color: #111827;
+}
+
+.reminders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.no-reminders {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.reminder-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-left: 4px solid #1f2937; /* navy accent like tasks */
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+}
+
+.reminder-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder-text {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.reminder-datetime {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.reminder-triggered {
+  font-size: 0.8rem;
+  color: #e11d48;
+  margin-top: 0.3rem;
+}
+
+.btn-delete {
+  background-color: #ef4444; /* red */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
