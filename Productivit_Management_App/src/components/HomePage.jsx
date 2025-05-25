@@ -48,7 +48,7 @@ const HomePage = () => {
         <h1>Welcome to TaskMaster</h1>
         <p>Your all-in-one productivity solution for managing tasks, tracking time, and achieving your goals.</p>
         <div className="motivation-box">
-          <h3>Today's Motivation</h3>
+          <h3>Motivation Hub</h3>
           <p>{quote}</p>
         </div>
       </header>
