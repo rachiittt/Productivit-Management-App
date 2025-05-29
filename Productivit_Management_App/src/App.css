@@ -933,65 +933,1021 @@ nav a.active {
   box-shadow: 0 6px 16px rgba(44, 62, 80, 0.4);
 }
 
-/* Responsive Design */
+
+.dashboard {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+/* Stats Cards Container */
+.dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* Each Big Rectangular Stat Card */
+.stat-item {
+  flex: 1;
+  background-color: #f4f6f9;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #005eff;
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Progress Section */
+.progress-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.progress-container p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background-color: #e4e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  width: 0;
+  border-radius: 12px;
+  transition: width 0.4s ease;
+}
+
+.progress-container span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.dashboard {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+/* Stats Cards Container */
+.dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* Each Big Rectangular Stat Card */
+.stat-item {
+  flex: 1;
+  background-color: #f4f6f9;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #005eff;
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Progress Section */
+.progress-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.progress-container p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background-color: #e4e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  width: 0;
+  border-radius: 12px;
+  transition: width 0.4s ease;
+}
+
+.progress-container span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+/* ENHANCED MOBILE RESPONSIVE CSS FOR PRODUCTIVITY APP */
+
+/* Base box-sizing for all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* IMPROVED TASK FORM - MAJOR BUTTON AND LAYOUT FIXES */
+.task-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+  transition: all 0.3s ease;
+}
+
+.task-input,
+.date-input,
+.priority-select {
+  flex: 1 1 220px;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  min-height: 48px;
+}
+
+.task-input:focus,
+.date-input:focus,
+.priority-select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.25);
+  outline: none;
+}
+
+/* MUCH IMPROVED TASK BUTTON */
+.task-btn {
+  flex: 1 1 180px;
+  min-height: 48px;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #1c2d3e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-btn:hover {
+  background-color: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.task-btn:active {
+  transform: translateY(0);
+}
+
+/* MOBILE RESPONSIVE BREAKPOINTS */
 @media (max-width: 768px) {
-  .timer-section {
-    margin: 1rem;
-    padding: 2.5rem 2rem;
-    border-radius: 12px;
-  }
-  
-  .timer-section h2 {
-    font-size: 1.8rem;
-  }
-  
-  .timer-display {
-    font-size: 4.5rem;
-    letter-spacing: 2px;
-  }
-  
-  .timer-controls {
+  /* TASK FORM MOBILE IMPROVEMENTS */
+  .task-form {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0.5rem;
     gap: 1rem;
   }
   
-  .timer-mode {
+  .task-input,
+  .date-input,
+  .priority-select {
+    width: 100%;
+    flex: none;
+    padding: 1rem 1.2rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 52px;
+  }
+  
+  /* MUCH BETTER MOBILE BUTTON */
+  .task-btn {
+    width: 100%;
+    flex: none;
+    min-height: 52px;
+    padding: 1rem 1.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+  
+  /* IMPROVED NAVIGATION */
+  nav {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  
+  nav ul {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+  
+  /* CONTAINER IMPROVEMENTS */
+  .container, .container-box {
+    padding: 1.5rem 1rem;
+    margin: 1rem 0.5rem;
+  }
+  
+  /* TASK LIST IMPROVEMENTS */
+  .page-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-header p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .task-controls {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+  
+  .btn-clear {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+  
+  .task-item {
+    flex-direction: column;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+  
+  .task-content {
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-date {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-priority {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  /* BETTER TASK ACTION BUTTONS */
+  .task-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .task-actions .btn {
+    flex: 1;
+    min-width: calc(50% - 0.25rem);
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+  
+  /* FOOTER IMPROVEMENTS */
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .footer-Layout {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .Web-Links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .Web-Links li {
+    margin-bottom: 0;
+  }
+  
+  .Web-Links a {
+    font-size: 15px;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .socialmedia-container {
+    margin-top: 1rem;
+  }
+  
+  .socialmedia-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-img {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .footer-bottom {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* EXTRA SMALL MOBILE DEVICES */
+  .task-form {
+    padding: 1rem 0.8rem;
+    margin: 1rem 0.3rem;
     gap: 0.8rem;
   }
   
-  .btn {
-    padding: 0.8rem 1.5rem;
+  .task-input,
+  .date-input,
+  .priority-select {
+    padding: 0.9rem 1rem;
+    font-size: 16px;
+    min-height: 50px;
+  }
+  
+  .task-btn {
+    min-height: 50px;
+    padding: 0.9rem 1.2rem;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  
+  nav {
+    padding: 10px 15px;
+  }
+  
+  .logo {
+    font-size: 1.4rem;
+  }
+  
+  nav ul {
+    gap: 0.8rem;
+  }
+  
+  nav a {
     font-size: 0.9rem;
-    min-width: 100px;
+    padding: 6px 10px;
+  }
+  
+  .container, .container-box {
+    padding: 1.2rem 0.8rem;
+    margin: 0.8rem 0.3rem;
+  }
+  
+  .page-header h1 {
+    font-size: 1.9rem;
+  }
+  
+  .task-item {
+    padding: 1rem 0.8rem;
+  }
+  
+  .task-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .task-actions .btn {
+    width: 100%;
+    min-width: auto;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    min-height: 46px;
+  }
+  
+  .footer-main {
+    padding: 1.5rem 0.8rem;
+    gap: 1rem;
+  }
+  
+  .footer-Layout {
+    gap: 1rem;
+  }
+  
+  .Web-Links a {
+    font-size: 14px;
+  }
+  
+  .socialmedia-icons {
+    gap: 0.8rem;
+  }
+  
+  .social-img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .footer-bottom {
+    font-size: 13px;
+  }
+}
+
+/* IMPROVED REMINDERS SECTION */
+@media (max-width: 768px) {
+  .reminders-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .reminder-form {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .reminder-input,
+  .time-input {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0.8rem 1rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+  
+  .set-reminder-btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+  
+  .reminder-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  
+  .reminder-content {
+    width: 100%;
+  }
+  
+  .reminder-text {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .reminder-datetime {
+    font-size: 0.9rem;
+  }
+  
+  .btn-delete {
+    align-self: flex-end;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    min-height: 40px;
+  }
+}
+
+/* IMPROVED POMODORO TIMER */
+@media (max-width: 768px) {
+  .timer-section {
+    margin: 1.5rem 0.5rem;
+    padding: 2rem 1rem;
+  }
+  
+  .timer-section h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timer-display {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+  }
+  
+  .timer-controls {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+  }
+  
+  .timer-mode {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn {
+    width: 100%;
+    min-width: auto;
+    padding: 1rem 1.5rem;
+    font-size: 16px;
+    min-height: 52px;
   }
   
   .btn-mode {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.8rem;
-    min-width: 90px;
+    width: 100%;
+    min-width: auto;
+    padding: 0.9rem 1.2rem;
+    font-size: 15px;
+    min-height: 48px;
   }
 }
 
 @media (max-width: 480px) {
   .timer-section {
-    padding: 2rem 1.5rem;
+    margin: 1rem 0.3rem;
+    padding: 1.5rem 0.8rem;
   }
   
   .timer-display {
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 1px;
   }
   
-  .timer-controls,
-  .timer-mode {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.8rem;
+  .timer-section h2 {
+    font-size: 1.3rem;
   }
   
-  .btn,
+  .btn {
+    padding: 0.9rem 1.2rem;
+    font-size: 15px;
+    min-height: 48px;
+  }
+  
   .btn-mode {
-    width: 100%;
-    margin: 0;
-    min-width: auto;
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+    min-height: 44px;
   }
 }
+
+/* IMPROVED DASHBOARD */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0.5rem;
+  }
+  
+  .dashboard-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    height: 100px;
+    padding: 1.5rem 1rem;
+  }
+  
+  .stat-number {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    font-size: 15px;
+  }
+  
+  .progress-container p {
+    font-size: 17px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .progress-bar {
+    height: 12px;
+  }
+  
+  .progress-container span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 1.2rem 0.8rem;
+    margin: 1rem 0.3rem;
+  }
+  
+  .stat-item {
+    height: 90px;
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .stat-number {
+    font-size: 28px;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+  }
+  
+  .progress-container p {
+    font-size: 16px;
+  }
+  
+  .progress-container span {
+    font-size: 13px;
+  }
+}
+
+/* IMPROVED HOME PAGE */
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-header p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .motivation-box {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0.5rem;
+  }
+  
+  .motivation-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .motivation-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header h1 {
+    font-size: 2rem;
+  }
+  
+  .home-header p {
+    font-size: 1rem;
+  }
+  
+  .motivation-box {
+    padding: 1.2rem 0.8rem;
+    margin: 1rem 0.3rem;
+  }
+  
+  .motivation-box h3 {
+    font-size: 1.4rem;
+  }
+  
+  .motivation-box p {
+    font-size: 1rem;
+  }
+}
+
+/* IMPROVED ABOUT SECTION */
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .about-image img,
+  .my-image img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .feature-item {
+    padding: 1.2rem;
+    text-align: left;
+  }
+  
+  .my-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .productivity-img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section h1 {
+    font-size: 2rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-section h3 {
+    font-size: 1.3rem;
+  }
+  
+  .feature-item {
+    padding: 1rem;
+  }
+  
+  .about-image img,
+  .my-image img {
+    max-width: 250px;
+  }
+}
+
+/* IMPROVED SERVICES SECTION */
+@media (max-width: 768px) {
+  .services-section h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .services-intro {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .service-icon {
+    align-self: center;
+    padding-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+  }
+  
+  .service-details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .service-details p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section h1 {
+    font-size: 2rem;
+  }
+  
+  .service-item {
+    padding: 1.2rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-icon {
+    font-size: 2.5rem;
+  }
+  
+  .service-details h2 {
+    font-size: 1.3rem;
+  }
+  
+  .service-details p {
+    font-size: 14px;
+  }
+}
+
+/* IMPROVED BLOG SECTION */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 2rem 1rem;
+  }
+  
+  .blog-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-section .heading {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .blog-post {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+  }
+  
+  .post-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .post h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .post p, .post li {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-section {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .blog-section h1 {
+    font-size: 1.9rem;
+  }
+  
+  .blog-post {
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .post h2 {
+    font-size: 1.4rem;
+  }
+  
+  .post p, .post li {
+    font-size: 14px;
+  }
+}
+
+/* ACCESSIBILITY IMPROVEMENTS */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* HIGH CONTRAST MODE */
+@media (prefers-contrast: high) {
+  .task-btn {
+    border: 2px solid #000;
+  }
+  
+  .task-input,
+  .date-input,
+  .priority-select {
+    border: 2px solid #000;
+  }
+  
+  .task-item {
+    border: 1px solid #000;
+  }
+}
+
+/* TOUCH TARGET IMPROVEMENTS */
+@media (pointer: coarse) {
+  .task-btn,
+  .btn,
+  .btn-mode,
+  .set-reminder-btn,
+  .btn-clear,
+  .task-actions .btn {
+    min-height: 48px;
+    padding: 0.8rem 1.2rem;
+  }
+  
+  nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
