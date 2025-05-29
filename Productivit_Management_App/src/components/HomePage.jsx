@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from 'react';
-
+import Dashboard from './Dashboard';
 const HomePage = () => {
+  // State for tasks
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks = localStorage.getItem('tasks');
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
   const [quote, setQuote] = useState('');
+
+  // Save tasks to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
 
   // Fetch quote from ZenQuotes API
   const fetchQuote = async () => {
@@ -41,20 +51,22 @@ const HomePage = () => {
       Notification.requestPermission();
     }
   }, []);
-
+  
+  
   return (
-    <div className="container-box">
+    <div className="container">
       <header className="home-header">
         <h1>Welcome to TaskMaster</h1>
         <p>Your all-in-one productivity solution for managing tasks, tracking time, and achieving your goals.</p>
         <div className="motivation-box">
-          <h3>Motivation Hub</h3>
+          <h3>Today's Motivation</h3>
           <p>{quote}</p>
         </div>
       </header>
+      
+      <Dashboard tasks={tasks} />
     </div>
   );
 };
 
 export default HomePage;
-
