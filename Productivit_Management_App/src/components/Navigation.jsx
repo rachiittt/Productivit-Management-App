@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Navigation = () => {
   return (
     <nav className="navbar">
-      <NavLink to=" " className="logo">TaskMaster</NavLink>
+      <NavLink to="/" className="logo">TaskMaster</NavLink>
       <ul className="nav-links">
         <li>
           <NavLink to="/" className={({isActive}) => 

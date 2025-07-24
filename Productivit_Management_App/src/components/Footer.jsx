@@ -1,7 +1,6 @@
 
 import React from 'react';
-
-
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,24 +34,23 @@ const Footer = () => {
         </div>
 
         <div className="footer-column">
-          <h3 className="footer-header">Connect With Us</h3>
-          
-          <div className='socialmedia-container'>
-            <div className='socialmedia-icons'>
-              <a href="https://github.com/rachiittt" className='social-links'>
-                <img src="/images/github.png" alt="Git Hub" className='social-img'/>
-              </a>
-              
-              <a href="https://www.linkedin.com/in/rachit-singh-417221329/" className='social-links'>
-                <img src="/images/linkedin-logo.png" alt="linkedin" className='social-img'/>
-              </a>
-              
-              <a href="https://x.com/home?lang=en" className='social-links'>
-                <img src="/images/twitter.png" alt="Twitter" className='social-img'/>
-              </a>
+            <h3 className="footer-header">Connect With Us</h3>
+            <div className='social-media-container'>
+              <div className='social-media-icons'>
+                <a href="https://github.com/rachiittt" className='social-link' aria-label="GitHub">
+                  <Github size={24} />
+                </a>
+                
+                <a href="https://www.linkedin.com/in/rachit-singh-417221329/" className='social-link' aria-label="LinkedIn">
+                  <Linkedin size={24} />
+                </a>
+                
+                <a href="https://x.com/home?lang=en" className='social-link' aria-label="Twitter">
+                  <Twitter size={24} />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} Productivity Pro. All rights reserved.</p>
