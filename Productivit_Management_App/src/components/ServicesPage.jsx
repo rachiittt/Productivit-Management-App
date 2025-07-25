@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import Footer from './Footer';
 const ServicesPage = () => {
   return (
     <div>
@@ -69,6 +70,7 @@ const ServicesPage = () => {
         </div>
       </section>
     </div>
+    <Footer/>
     </div>
   );
 };

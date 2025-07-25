@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
 import Navigation from './Navigation';
+import Footer from './Footer';
 const HomePage = () => {
   // State for tasks
   const [tasks, setTasks] = useState(() => {
@@ -71,6 +72,7 @@ const HomePage = () => {
       
       <Dashboard tasks={tasks} />
     </div>
+    <Footer/>
     </div>
   );
 };

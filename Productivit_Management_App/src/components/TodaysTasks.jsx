@@ -4,6 +4,7 @@ import TaskList from './TaskList';
 import Timer from './Timer';
 import Reminders from './Reminders';
 import Navigation from './Navigation';
+import Footer from './Footer';
 const TodaysTasks = () => {
   // State for tasks
   const [tasks, setTasks] = useState(() => {
@@ -112,6 +113,7 @@ const TodaysTasks = () => {
       
       <Reminders />
     </div>
+    <Footer/>
     </div>
   );
 };

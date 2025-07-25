@@ -24,7 +24,7 @@ function App() {
             <Route path='/' element={<LoginSignupPage />}></Route>
             <Route path='/Your-Task' element={<TodaysTasks />}></Route>
         </Routes>
-        <Footer />
+     
     </Rachit>
     )
 }

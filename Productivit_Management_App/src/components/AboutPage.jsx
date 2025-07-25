@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import Footer from './Footer';
 const AboutPage = () => {
   return (
     <div>
@@ -60,6 +61,7 @@ const AboutPage = () => {
         </div>
       </section>
     </div>
+    <Footer/>
     </div>
   );
 };
