@@ -1,23 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const Timer = () => {
-  // Time settings (in seconds)
   const times = {
-    pomodoro: 25 * 60,      // 25 minutes
-    shortBreak: 5 * 60,     // 5 minutes (fixed from 5 * 10)
-    longBreak: 15 * 60      // 15 minutes
+    pomodoro: 25 * 60,
+    shortBreak: 5 * 60,
+    longBreak: 15 * 60
   };
 
-  // State for timer
   const [mode, setMode] = useState('pomodoro');
   const [timeLeft, setTimeLeft] = useState(times.pomodoro);
   const [isRunning, setIsRunning] = useState(false);
   const [hasPermission, setHasPermission] = useState(false);
 
-  // Ref for interval
   const timerRef = useRef(null);
 
-  // Request notification permission on component mount
   useEffect(() => {
     if ('Notification' in window) {
       if (Notification.permission === 'granted') {

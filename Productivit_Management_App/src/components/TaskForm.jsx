@@ -12,9 +12,8 @@ const TaskForm=({onAddTask})=>{
       return
     }
 
-    onAddTask({text,dueDate,priority})//This will give us all the given info
+    onAddTask({text,dueDate,priority})
 
-    // Reset form
     setText('');
     setDueDate('');
     setPriority('medium');

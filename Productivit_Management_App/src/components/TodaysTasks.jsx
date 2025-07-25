@@ -12,10 +12,8 @@ const TodaysTasks = () => {
     return savedTasks ? JSON.parse(savedTasks) : [];
   });
 
-  // State for task filter
   const [filter, setFilter] = useState('all');
 
-  // Save tasks to localStorage whenever they change
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);

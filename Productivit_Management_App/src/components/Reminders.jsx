@@ -1,22 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
 const ReminderStuff = () => {
-  // list of reminders
   const [reminderList, setReminderList] = useState(() => {
     const saved = localStorage.getItem('reminderList');
     return saved ? JSON.parse(saved) : [];
   });
 
-  // input fields
   const [reminderText, setReminderText] = useState('');
   const [reminderDateTime, setReminderDateTime] = useState('');
 
-  // save to local storage
   useEffect(() => {
     localStorage.setItem('reminderList', JSON.stringify(reminderList));
   }, [reminderList]);
 
-  // reminder checker
   useEffect(() => {
     const intervalCheck = setInterval(() => {
       const now = new Date();

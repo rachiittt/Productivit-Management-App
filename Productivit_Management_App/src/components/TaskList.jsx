@@ -1,7 +1,6 @@
 import React from 'react';
 
 const TaskList = ({ tasks, onComplete, onEditTask, onDeleteTask }) => {
-  // Format date
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return dateString ? date.toLocaleDateString() : '';
