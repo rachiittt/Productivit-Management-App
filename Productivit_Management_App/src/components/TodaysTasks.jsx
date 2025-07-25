@@ -3,7 +3,7 @@ import TaskForm from './TaskForm';
 import TaskList from './TaskList';
 import Timer from './Timer';
 import Reminders from './Reminders';
-
+import Navigation from './Navigation';
 const TodaysTasks = () => {
   // State for tasks
   const [tasks, setTasks] = useState(() => {
@@ -68,6 +68,9 @@ const TodaysTasks = () => {
 
   
   return (
+    <div>
+      <Navigation/>
+    
     <div className="container">
       <header className="page-header">
         <h1>Today's Tasks</h1>
@@ -108,6 +111,7 @@ const TodaysTasks = () => {
       <Timer />
       
       <Reminders />
+    </div>
     </div>
   );
 };

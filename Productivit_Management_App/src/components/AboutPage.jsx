@@ -1,7 +1,9 @@
 import React from 'react';
-
+import Navigation from './Navigation';
 const AboutPage = () => {
   return (
+    <div>
+      <Navigation/>
     <div className="container">
       <section className="about-section">
         <h1>About TaskMaster</h1>
@@ -57,6 +59,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 };

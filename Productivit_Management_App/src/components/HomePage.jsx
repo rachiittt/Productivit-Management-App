@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
+import Navigation from './Navigation';
 const HomePage = () => {
   // State for tasks
   const [tasks, setTasks] = useState(() => {
@@ -54,7 +55,11 @@ const HomePage = () => {
   
   
   return (
+    <div>
+      <Navigation/>
+    
     <div className="container">
+      
       <header className="home-header">
         <h1>Welcome to TaskMaster</h1>
         <p>Your all-in-one productivity solution for managing tasks, tracking time, and achieving your goals.</p>
@@ -65,6 +70,7 @@ const HomePage = () => {
       </header>
       
       <Dashboard tasks={tasks} />
+    </div>
     </div>
   );
 };

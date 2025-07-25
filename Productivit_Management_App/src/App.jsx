@@ -14,13 +14,14 @@ import './App.css';
 function App() {
     return(
     <Rachit>
-        <Navigation />
+        
+        
         <Routes>
-            <Route path='/' element={<HomePage />}></Route>
+            <Route path='/home' element={<HomePage />}></Route>
             <Route path='/about' element={<AboutPage />}></Route>
             <Route path='/services' element={<ServicesPage />}></Route>
             <Route path='/blog' element={<BlogPage />}></Route>
-            <Route path='/LoginSignupPage' element={<LoginSignupPage />}></Route>
+            <Route path='/' element={<LoginSignupPage />}></Route>
             <Route path='/Your-Task' element={<TodaysTasks />}></Route>
         </Routes>
         <Footer />

@@ -7,7 +7,7 @@ const Navigation = () => {
       <NavLink to="/" className="logo">TaskMaster</NavLink>
       <ul className="nav-links">
         <li>
-          <NavLink to="/" className={({isActive}) => 
+          <NavLink to="/home" className={({isActive}) => 
             isActive ? 'active' : ''
           }>
             Home
@@ -42,10 +42,10 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/LoginSignupPage" className={({ isActive }) => 
+          <NavLink to="/" className={({ isActive }) => 
             isActive ? 'active' : ''
           }>
-            Login/Signup
+            logOut
           </NavLink>
         </li>
       </ul>

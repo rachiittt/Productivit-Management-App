@@ -1,7 +1,9 @@
 import React from 'react'
-
+import Navigation from './Navigation'
 const BlogPage = () => {
   return (
+    <div>
+      <Navigation/>
     <div className="container">
       <section className="blog-section">
         <h1>Productivity Blog</h1>
@@ -50,6 +52,7 @@ const BlogPage = () => {
           </article>
         </div>
       </section>
+    </div>
     </div>
   )
 }

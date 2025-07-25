@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const LoginSignupPage = () => {
     const [isLoginMode, setIsLoginMode] = useState(true);
@@ -182,9 +183,10 @@ const LoginSignupPage = () => {
                         </div>
                     )}
 
-                    <button type="submit" disabled={loading} className="auth-button">
+                    <Link to="home"><button type="submit" disabled={loading} className="auth-button">
                         {loading ? <span className="spinner"></span> : (isLoginMode ? 'Login' : 'Sign Up')}
-                    </button>
+                        </button>
+                    </Link>
                 </form>
 
                 <div className="switch-mode">
