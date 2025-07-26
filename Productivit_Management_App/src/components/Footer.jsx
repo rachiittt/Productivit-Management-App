@@ -26,9 +26,9 @@ const Footer = () => {
           <div className='footer-column'>
           <h3 className='footer-header'>Need Help ?</h3>
           <ul className='Web-Links'>
-              <li><a href="/">Help Center</a></li>
-              <li><a href="/">Contact Us</a></li>
-              <li><a href="/">FAQ</a></li>
+              <li><a href="/home">Help Center</a></li>
+              <li><a href="/home">Contact Us</a></li>
+              <li><a href="/home">FAQ</a></li>
           </ul>
           </div>
         </div>
