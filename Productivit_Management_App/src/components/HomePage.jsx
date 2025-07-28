@@ -70,6 +70,7 @@ const HomePage = () => {
     </div>
     <Footer/>
     </div>
+
   );
 };
 
