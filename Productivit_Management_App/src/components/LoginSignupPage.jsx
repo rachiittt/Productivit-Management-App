@@ -141,6 +141,7 @@ const LoginSignupPage = () => {
             />
           </div>
 
+
           {!isLoginMode && (
             <div className="form-group">
               <label>Confirm Password</label>
